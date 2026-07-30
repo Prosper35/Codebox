@@ -11,6 +11,18 @@ export function Hero() {
         style={{ backgroundImage: 'url(/images/hero-space.png)' }}
         aria-hidden="true"
       />
+      <video
+        autoPlay
+        loop
+        muted
+        playsInline
+        preload="metadata"
+        poster="/images/hero-space.png"
+        className="absolute inset-0 size-full object-cover opacity-90 motion-reduce:hidden"
+        aria-hidden="true"
+      >
+        <source src="/Short.mp4" type="video/mp4" />
+      </video>
       <div
         className="absolute inset-0 bg-gradient-to-b from-black/70 via-transparent to-[#050505]"
         aria-hidden="true"

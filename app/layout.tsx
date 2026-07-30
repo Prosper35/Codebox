@@ -18,6 +18,11 @@ export const metadata: Metadata = {
   title: 'Codebox Games',
   description:
     'Codebox Games is an international indie game development studio located in Nigeria and the UAE, sharing Nigerian culture through memorable games.',
+  icons: {
+    icon: [{ url: '/Codebox%20Games%20Logo.png', type: 'image/png' }],
+    shortcut: ['/Codebox%20Games%20Logo.png'],
+    apple: [{ url: '/Codebox%20Games%20Logo.png', type: 'image/png' }],
+  },
   generator: 'v0.app',
 }
 

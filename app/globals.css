@@ -191,3 +191,26 @@
 .animate-hero-flicker {
   animation: hero-flicker 3.5s ease-in-out infinite;
 }
+
+@keyframes brand-pendulum {
+  from {
+    left: 0;
+    transform: translateX(0);
+  }
+  to {
+    left: 100%;
+    transform: translateX(-100%);
+  }
+}
+
+.animate-brand-pendulum {
+  animation: brand-pendulum 8s ease-in-out infinite alternate;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .animate-brand-pendulum {
+    left: 50%;
+    animation: none;
+    transform: translateX(-50%);
+  }
+}
