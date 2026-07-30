@@ -8,7 +8,7 @@ import { JoinCta } from "@/components/contact/join-cta"
 export const metadata: Metadata = {
   title: "Contact Us | Codebox Games",
   description:
-    "The Codebox Games team is united virtually between Nigeria and the United Arab Emirates, with offices in Lagos, Ile-Ife, and Dubai. Get in touch or meet the team.",
+    "Contact Codebox Games in Nigeria for studio, partnership, press, and career enquiries.",
 }
 
 export default function ContactPage() {

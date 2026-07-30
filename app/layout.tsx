@@ -1,15 +1,15 @@
 import { Analytics } from '@vercel/analytics/next'
 import type { Metadata, Viewport } from 'next'
-import { Chakra_Petch, Inter } from 'next/font/google'
+import { Barlow_Condensed, Manrope } from 'next/font/google'
 import './globals.css'
 
-const chakraPetch = Chakra_Petch({
+const barlowCondensed = Barlow_Condensed({
   subsets: ['latin'],
-  weight: ['400', '500', '600', '700'],
+  weight: ['500', '600', '700', '800'],
   variable: '--font-display',
 })
 
-const inter = Inter({
+const manrope = Manrope({
   subsets: ['latin'],
   variable: '--font-sans',
 })
@@ -33,13 +33,12 @@ const themeScript = `
 export const metadata: Metadata = {
   title: 'Codebox Games',
   description:
-    'Codebox Games is an international indie game development studio located in Nigeria and the UAE, sharing Nigerian culture through memorable games.',
+    'Codebox Games is an independent Nigerian game studio creating Hell Bleeds, a dark fantasy action-adventure inspired by African folklore.',
   icons: {
     icon: [{ url: '/Codebox%20Games%20Logo.png', type: 'image/png' }],
     shortcut: ['/Codebox%20Games%20Logo.png'],
     apple: [{ url: '/Codebox%20Games%20Logo.png', type: 'image/png' }],
   },
-  generator: 'v0.app',
 }
 
 export const viewport: Viewport = {
@@ -59,7 +58,7 @@ export default function RootLayout({
     <html
       lang="en"
       suppressHydrationWarning
-      className={`${chakraPetch.variable} ${inter.variable} bg-background`}
+      className={`${barlowCondensed.variable} ${manrope.variable} bg-background`}
     >
       <head>
         <script dangerouslySetInnerHTML={{ __html: themeScript }} />

@@ -6,9 +6,9 @@ import { GameCards } from "@/components/games/game-cards"
 import { JoinCta } from "@/components/contact/join-cta"
 
 export const metadata: Metadata = {
-  title: "Our Games | Codebox Games",
+  title: "Hell Bleeds | Codebox Games",
   description:
-    "Codebox Games is building Legends of Orisha: Blood and Water, a cross-platform action-adventure set in the world of African Fantasy, powered by Unreal Engine 5.",
+    "Explore Hell Bleeds, a dark fantasy action-adventure from Codebox Games inspired by African folklore.",
 }
 
 export default function GamesPage() {

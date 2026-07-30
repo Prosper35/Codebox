@@ -1,8 +1,9 @@
 import { SiteHeader } from '@/components/site-header'
 import { Hero } from '@/components/hero'
-import { Welcome } from '@/components/welcome'
-import { Investors } from '@/components/investors'
-import { NavCards } from '@/components/nav-cards'
+import { GameIntro } from '@/components/home/game-intro'
+import { LagosGamesWeekTeaser } from '@/components/home/lagos-games-week'
+import { StudioStatement } from '@/components/home/studio-statement'
+import { WorldShowcase } from '@/components/home/world-showcase'
 import { SiteFooter } from '@/components/site-footer'
 
 export default function Page() {
@@ -10,9 +11,10 @@ export default function Page() {
     <main className="relative">
       <SiteHeader />
       <Hero />
-      <Welcome />
-      <Investors />
-      <NavCards />
+      <GameIntro />
+      <WorldShowcase />
+      <LagosGamesWeekTeaser />
+      <StudioStatement />
       <SiteFooter />
     </main>
   )

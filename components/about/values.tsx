@@ -1,48 +1,44 @@
+import Image from 'next/image'
 import Link from 'next/link'
+import { ArrowRight } from 'lucide-react'
 
 export function Values() {
   return (
-    <section className="relative overflow-hidden bg-background text-foreground">
-      <div
-        className="absolute inset-0 bg-cover bg-center opacity-20 dark:opacity-40"
-        style={{ backgroundImage: 'url(/images/hero-space.png)' }}
-        aria-hidden="true"
+    <section className="relative flex min-h-[78svh] items-end overflow-hidden bg-black text-white">
+      <Image
+        src="/2.jpg"
+        alt="Hell Bleeds warrior looking toward the camera"
+        fill
+        priority
+        sizes="100vw"
+        className="object-cover object-center"
       />
-      <div
-        className="absolute inset-0 bg-gradient-to-b from-background/70 via-background/45 to-background dark:from-black/80 dark:via-black/60 dark:to-black/90"
-        aria-hidden="true"
-      />
+      <div className="absolute inset-0 bg-[linear-gradient(90deg,rgba(0,0,0,0.88)_0%,rgba(0,0,0,0.52)_48%,rgba(0,0,0,0.12)_78%),linear-gradient(180deg,rgba(0,0,0,0.05)_35%,rgba(0,0,0,0.82)_100%)]" />
 
-      <div className="relative z-10 mx-auto grid max-w-6xl gap-12 px-6 pb-24 pt-36 md:grid-cols-2 md:items-start md:gap-16">
-        <div className="max-w-md">
-          <h1 className="font-display text-4xl font-bold tracking-tight sm:text-5xl">
-            Our values
+      <div className="relative mx-auto w-full max-w-7xl px-6 pb-16 pt-32 md:pb-24">
+        <div className="max-w-3xl">
+          <p className="text-[0.65rem] font-bold uppercase tracking-[0.24em] text-brand">
+            About
+          </p>
+          <h1 className="mt-5 font-display text-6xl font-bold uppercase leading-[0.86] tracking-tight text-balance sm:text-8xl lg:text-9xl">
+            Building worlds inspired by
+            <span className="block text-brand">African legends.</span>
           </h1>
-          <p className="mt-6 text-sm leading-relaxed text-foreground/70">
-            At Codebox Games, our core values are creativity, authenticity, and
-            entertainment for gamers in everything we do. In addition, we value
-            diversity and equality at all levels of our organization to ensure
-            every person has a voice when it comes to game design and
-            development. Our teammates love the diverse views that contribute to
-            the way our games are being created. As a team of creatives and
-            developers, we encourage our staff and customers to escape from the
-            limitations of the 3-dimensional world and launch into the limitless
-            11th Dimension.
+          <p className="mt-7 max-w-2xl text-sm leading-7 text-white/72 sm:text-base">
+            Codebox Games is an independent game development studio based in
+            Nigeria, creating immersive and original gaming experiences inspired
+            by African mythology, folklore, history, and culture. We believe the
+            stories, traditions, and legends of Africa have the power to
+            captivate players around the world when brought to life through
+            exceptional game design and storytelling.
           </p>
           <Link
-            href="/#join"
-            className="mt-8 inline-flex h-12 w-44 items-center justify-center bg-brand font-medium text-brand-foreground transition-colors hover:bg-brand/90"
+            href="/join-us"
+            className="group mt-8 inline-flex items-center gap-3 text-xs font-bold uppercase tracking-[0.16em] text-white transition-colors hover:text-brand"
           >
-            Join us
+            Work with us
+            <ArrowRight className="size-4 transition-transform group-hover:translate-x-1" />
           </Link>
-        </div>
-
-        <div className="md:pt-2">
-          <img
-            src="/images/about-chalkboard.png"
-            alt="Chalkboard with a checked box next to the words About Us"
-            className="w-full border border-foreground/10 object-cover"
-          />
         </div>
       </div>
     </section>

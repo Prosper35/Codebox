@@ -4,11 +4,12 @@ import { SiteFooter } from '@/components/site-footer'
 import { Values } from '@/components/about/values'
 import { Story } from '@/components/about/story'
 import { Diversity } from '@/components/about/diversity'
+import { Team } from '@/components/about/team'
 
 export const metadata: Metadata = {
-  title: 'About Us | Codebox Games',
+  title: 'Studio | Codebox Games',
   description:
-    'Codebox Games is a game studio accelerating 3D media and game development in Africa. Learn about our values, story, and commitment to diversity and inclusion.',
+    'Meet Codebox Games, an independent Nigerian studio building original games inspired by African stories, history, and mythology.',
 }
 
 export default function AboutPage() {
@@ -17,6 +18,7 @@ export default function AboutPage() {
       <SiteHeader />
       <Values />
       <Story />
+      <Team />
       <Diversity />
       <SiteFooter />
     </main>

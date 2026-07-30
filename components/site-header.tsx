@@ -2,25 +2,27 @@
 
 import { useState } from 'react'
 import Link from 'next/link'
+import { usePathname } from 'next/navigation'
 import { Menu, X } from 'lucide-react'
 import { Logo } from '@/components/logo'
 import { ThemeToggle } from '@/components/theme-toggle'
 
 const navLinks = [
-  { label: 'About Us', href: '/about' },
-  { label: 'Our Games', href: '/games' },
-  { label: 'Latest News', href: '/#news' },
-  { label: 'Contact Us', href: '/contact-us' },
-  { label: 'Join us', href: '/#join' },
+  { label: 'Hell Bleeds', href: '/games' },
+  { label: 'Studio', href: '/about' },
+  { label: 'Latest News', href: '/news' },
+  { label: 'Contact', href: '/contact-us' },
+  { label: 'Careers', href: '/join-us' },
 ]
 
 export function SiteHeader() {
   const [open, setOpen] = useState(false)
+  const pathname = usePathname()
 
   return (
-    <header className="absolute inset-x-0 top-0 z-50">
-      <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-6">
-        <Link href="#top" aria-label="Codebox Games home">
+    <header className="sticky top-0 z-50 border-b border-black/10 bg-white/30 backdrop-blur-xl backdrop-brightness-125 transition-colors dark:border-white/10 dark:bg-black/20 dark:backdrop-brightness-100">
+      <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-3">
+        <Link href="/" aria-label="Codebox Games home">
           <Logo />
         </Link>
 
@@ -30,9 +32,18 @@ export function SiteHeader() {
               <Link
                 key={link.label}
                 href={link.href}
-                className="text-sm text-foreground/90 transition-colors hover:text-brand"
+                aria-current={pathname === link.href ? 'page' : undefined}
+                className="group relative py-2 text-xs font-bold uppercase tracking-[0.14em] text-black transition-colors hover:text-brand dark:text-white/90"
               >
                 {link.label}
+                <span
+                  className={`absolute inset-x-0 -bottom-0.5 h-px origin-left bg-brand transition-transform ${
+                    pathname === link.href
+                      ? 'scale-x-100'
+                      : 'scale-x-0 group-hover:scale-x-100'
+                  }`}
+                  aria-hidden="true"
+                />
               </Link>
             ))}
           </nav>
@@ -52,14 +63,14 @@ export function SiteHeader() {
       </div>
 
       {open && (
-        <nav className="border-t border-border bg-background/95 px-6 py-4 backdrop-blur-md lg:hidden">
-          <ul className="flex flex-col gap-4">
+        <nav className="border-t border-border bg-background/98 px-6 py-6 backdrop-blur-xl lg:hidden">
+          <ul className="flex flex-col gap-5">
             {navLinks.map((link) => (
               <li key={link.label}>
                 <Link
                   href={link.href}
                   onClick={() => setOpen(false)}
-                  className="block text-sm text-foreground/90 transition-colors hover:text-brand"
+                  className="block font-display text-2xl font-semibold uppercase tracking-wide text-foreground transition-colors hover:text-brand"
                 >
                   {link.label}
                 </Link>
