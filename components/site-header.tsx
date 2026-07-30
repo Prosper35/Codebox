@@ -19,8 +19,8 @@ export function SiteHeader() {
   return (
     <header className="absolute inset-x-0 top-0 z-50">
       <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-6">
-        <Link href="#top" aria-label="Dimension11 Studios home">
-          <Logo tone="light" />
+        <Link href="#top" aria-label="Codebox Games home">
+          <Logo />
         </Link>
 
         <nav className="hidden items-center gap-8 md:flex">

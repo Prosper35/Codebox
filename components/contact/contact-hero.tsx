@@ -17,7 +17,7 @@ export function ContactHero() {
             Contact Us
           </h1>
           <p className="mt-5 text-sm leading-relaxed text-white/85 md:text-base">
-            The Dimension11 team is united virtually between Nigeria and the United Arab Emirates. Our Nigeria team
+            The Codebox Games team is united virtually between Nigeria and the United Arab Emirates. Our Nigeria team
             members are located in Lagos, the center of excellence that hosts our administrative offices, and Ile-Ife,
             the cradle of Yoruba civilization and is home to our creative studio. The team in Dubai, United Arab Emirates
             is our gateway to international business development and partnerships.

@@ -6,9 +6,9 @@ import { GameCards } from "@/components/games/game-cards"
 import { JoinCta } from "@/components/contact/join-cta"
 
 export const metadata: Metadata = {
-  title: "Our Games | Dimension11",
+  title: "Our Games | Codebox Games",
   description:
-    "Dimension11 is building Legends of Orisha: Blood and Water, a cross-platform action-adventure set in the world of African Fantasy, powered by Unreal Engine 5.",
+    "Codebox Games is building Legends of Orisha: Blood and Water, a cross-platform action-adventure set in the world of African Fantasy, powered by Unreal Engine 5.",
 }
 
 export default function GamesPage() {

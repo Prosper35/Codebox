@@ -8,7 +8,7 @@ export function MeetTeam() {
           <h2 className="font-display text-3xl font-bold text-foreground md:text-4xl">Meet the Team</h2>
           <p className="mt-5 max-w-md text-base leading-relaxed text-foreground">
             Interested in meeting the team in-person or visiting Ile-Ife? Send us an{" "}
-            <a href="mailto:hello@dimension11studios.com" className="text-brand underline underline-offset-2">
+            <a href="mailto:hello@codeboxgames.com" className="text-brand underline underline-offset-2">
               email
             </a>{" "}
             and we&apos;ll be in touch.

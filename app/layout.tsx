@@ -15,9 +15,9 @@ const inter = Inter({
 })
 
 export const metadata: Metadata = {
-  title: 'Dimension11 Studios',
+  title: 'Codebox Games',
   description:
-    'Dimension11 Studios is an international indie game development studio located in Nigeria and the UAE, sharing Nigerian culture through memorable games.',
+    'Codebox Games is an international indie game development studio located in Nigeria and the UAE, sharing Nigerian culture through memorable games.',
   generator: 'v0.app',
 }
 

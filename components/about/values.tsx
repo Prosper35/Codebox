@@ -19,7 +19,7 @@ export function Values() {
             Our values
           </h1>
           <p className="mt-6 text-sm leading-relaxed text-white/70">
-            At Dimension11, our core values are creativity, authenticity, and
+            At Codebox Games, our core values are creativity, authenticity, and
             entertainment for gamers in everything we do. In addition, we value
             diversity and equality at all levels of our organization to ensure
             every person has a voice when it comes to game design and

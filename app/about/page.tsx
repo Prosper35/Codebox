@@ -6,9 +6,9 @@ import { Story } from '@/components/about/story'
 import { Diversity } from '@/components/about/diversity'
 
 export const metadata: Metadata = {
-  title: 'About Us | Dimension11',
+  title: 'About Us | Codebox Games',
   description:
-    'Dimension11 is a game studio accelerating 3D media and game development in Africa. Learn about our values, story, and commitment to diversity and inclusion.',
+    'Codebox Games is a game studio accelerating 3D media and game development in Africa. Learn about our values, story, and commitment to diversity and inclusion.',
 }
 
 export default function AboutPage() {

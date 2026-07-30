@@ -8,7 +8,7 @@ export function Story() {
         <p className="mx-auto mt-8 max-w-2xl text-sm leading-relaxed text-brand-foreground/80">
           Our journey began in 2018 in the residence halls of the Obafemi
           Awolowo University campus with a group of passionate gamers turned
-          game developers. In 2021, Dimension11 was formally established with a
+          game developers. In 2021, Codebox Games was formally established with a
           goal to accelerate 3D media and game development in Africa by adapting
           the latest in game-development technologies. Our team is currently
           working on our first cross-platform video game &ldquo;Legends of

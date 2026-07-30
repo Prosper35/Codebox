@@ -49,7 +49,7 @@ export function SiteFooter() {
     <footer id="contact" className="bg-secondary">
       <div className="mx-auto max-w-6xl px-6 py-14">
         <div className="flex flex-col items-start justify-between gap-8 sm:flex-row sm:items-center">
-          <Logo tone="dark" />
+          <Logo />
           <div className="flex items-center gap-4">
             {socials.map(({ label, href, Icon }) => (
               <Link
@@ -65,7 +65,7 @@ export function SiteFooter() {
         </div>
 
         <div className="mt-10 border-t border-border pt-6 text-right">
-          <p className="text-xs text-foreground/60">© Dimension11 2025</p>
+          <p className="text-xs text-foreground/60">© Codebox Games 2025</p>
         </div>
       </div>
     </footer>
