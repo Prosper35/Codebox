@@ -2,14 +2,14 @@ import Link from 'next/link'
 
 export function Values() {
   return (
-    <section className="relative overflow-hidden bg-[#0b0b0b] text-white">
+    <section className="relative overflow-hidden bg-background text-foreground">
       <div
-        className="absolute inset-0 bg-cover bg-center opacity-40"
+        className="absolute inset-0 bg-cover bg-center opacity-20 dark:opacity-40"
         style={{ backgroundImage: 'url(/images/hero-space.png)' }}
         aria-hidden="true"
       />
       <div
-        className="absolute inset-0 bg-gradient-to-b from-black/80 via-black/60 to-black/90"
+        className="absolute inset-0 bg-gradient-to-b from-background/70 via-background/45 to-background dark:from-black/80 dark:via-black/60 dark:to-black/90"
         aria-hidden="true"
       />
 
@@ -18,7 +18,7 @@ export function Values() {
           <h1 className="font-display text-4xl font-bold tracking-tight sm:text-5xl">
             Our values
           </h1>
-          <p className="mt-6 text-sm leading-relaxed text-white/70">
+          <p className="mt-6 text-sm leading-relaxed text-foreground/70">
             At Codebox Games, our core values are creativity, authenticity, and
             entertainment for gamers in everything we do. In addition, we value
             diversity and equality at all levels of our organization to ensure
@@ -41,7 +41,7 @@ export function Values() {
           <img
             src="/images/about-chalkboard.png"
             alt="Chalkboard with a checked box next to the words About Us"
-            className="w-full border border-white/10 object-cover"
+            className="w-full border border-foreground/10 object-cover"
           />
         </div>
       </div>

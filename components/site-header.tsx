@@ -4,6 +4,7 @@ import { useState } from 'react'
 import Link from 'next/link'
 import { Menu, X } from 'lucide-react'
 import { Logo } from '@/components/logo'
+import { ThemeToggle } from '@/components/theme-toggle'
 
 const navLinks = [
   { label: 'About Us', href: '/about' },
@@ -23,38 +24,42 @@ export function SiteHeader() {
           <Logo />
         </Link>
 
-        <nav className="hidden items-center gap-8 md:flex">
-          {navLinks.map((link) => (
-            <Link
-              key={link.label}
-              href={link.href}
-              className="text-sm text-white/90 transition-colors hover:text-brand"
-            >
-              {link.label}
-            </Link>
-          ))}
-        </nav>
+        <div className="flex items-center gap-3">
+          <nav className="hidden items-center gap-8 lg:flex">
+            {navLinks.map((link) => (
+              <Link
+                key={link.label}
+                href={link.href}
+                className="text-sm text-foreground/90 transition-colors hover:text-brand"
+              >
+                {link.label}
+              </Link>
+            ))}
+          </nav>
 
-        <button
-          type="button"
-          onClick={() => setOpen((v) => !v)}
-          className="text-white md:hidden"
-          aria-label={open ? 'Close menu' : 'Open menu'}
-          aria-expanded={open}
-        >
-          {open ? <X className="size-6" /> : <Menu className="size-6" />}
-        </button>
+          <ThemeToggle />
+
+          <button
+            type="button"
+            onClick={() => setOpen((v) => !v)}
+            className="flex size-10 items-center justify-center text-foreground lg:hidden"
+            aria-label={open ? 'Close menu' : 'Open menu'}
+            aria-expanded={open}
+          >
+            {open ? <X className="size-6" /> : <Menu className="size-6" />}
+          </button>
+        </div>
       </div>
 
       {open && (
-        <nav className="border-t border-white/10 bg-black/95 px-6 py-4 md:hidden">
+        <nav className="border-t border-border bg-background/95 px-6 py-4 backdrop-blur-md lg:hidden">
           <ul className="flex flex-col gap-4">
             {navLinks.map((link) => (
               <li key={link.label}>
                 <Link
                   href={link.href}
                   onClick={() => setOpen(false)}
-                  className="block text-sm text-white/90 transition-colors hover:text-brand"
+                  className="block text-sm text-foreground/90 transition-colors hover:text-brand"
                 >
                   {link.label}
                 </Link>

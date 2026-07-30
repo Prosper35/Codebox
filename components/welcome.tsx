@@ -1,6 +1,6 @@
 export function Welcome() {
   return (
-    <section id="about" className="bg-background py-24">
+    <section id="about" className="bg-background pb-24 pt-10">
       <div className="mx-auto max-w-3xl px-6 text-center">
         <h2 className="text-4xl font-bold text-foreground sm:text-5xl">Welcome</h2>
         <p className="mx-auto mt-8 max-w-xl text-left text-base leading-relaxed text-foreground/80">

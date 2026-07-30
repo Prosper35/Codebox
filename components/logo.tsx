@@ -7,12 +7,17 @@ export function Logo({
   className?: string
 }) {
   return (
-    <Image
-      src="/Codebox%20Games%20Logo.png"
-      alt="Codebox Games"
-      width={88}
-      height={88}
-      className={cn('size-20 object-contain', className)}
-    />
+    <div className={cn('flex items-center gap-2', className)}>
+      <Image
+        src="/Codebox%20Games%20Logo.png"
+        alt=""
+        width={88}
+        height={88}
+        className="size-16 object-contain sm:size-20"
+      />
+      <span className="font-display text-xs font-bold tracking-[0.08em] text-foreground sm:text-base">
+        CODEBOX GAMES
+      </span>
+    </div>
   )
 }
