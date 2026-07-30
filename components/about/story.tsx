@@ -1,9 +1,15 @@
 import Image from 'next/image'
 
 const milestones = [
-  { year: '2018', label: 'A group of gamers begins creating together at Obafemi Awolowo University.' },
-  { year: '2021', label: 'Codebox Games is formally established as an independent Nigerian studio.' },
-  { year: 'Now', label: 'The team is building Hell Bleeds for players around the world.' },
+  {
+    year: '2021',
+    label:
+      'Codebox Games is formally established as an independent Nigerian studio.',
+  },
+  {
+    year: 'Now',
+    label: 'The team is building Hell Bleeds for players around the world.',
+  },
 ]
 
 export function Story() {
@@ -35,7 +41,7 @@ export function Story() {
           </div>
         </div>
 
-        <div className="mt-16 grid border-y border-border md:grid-cols-3">
+        <div className="mt-16 grid border-y border-border md:grid-cols-2">
           {milestones.map((milestone) => (
             <div
               key={milestone.year}
