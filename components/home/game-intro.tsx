@@ -10,7 +10,6 @@ export function GameIntro() {
       <div className="mx-auto grid max-w-7xl gap-14 px-6 lg:grid-cols-12 lg:items-center">
         <div className="lg:col-span-5">
           <div className="flex items-center gap-4">
-            <span className="font-display text-5xl font-bold text-brand">01</span>
             <span className="h-px flex-1 bg-border" />
             <span className="text-[0.65rem] font-bold uppercase tracking-[0.22em] text-muted-foreground">
               The game

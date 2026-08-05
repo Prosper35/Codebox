@@ -2,8 +2,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 import { ArrowDown, ArrowRight, Play } from 'lucide-react'
 
-const trailerUrl =
-  'https://drive.google.com/file/d/11s7_reU1tg6AOGrYAYZKTb-Uozwj06HA/view?usp=sharing'
+const trailerUrl = 'https://youtu.be/2q_qoHTgPGY'
 
 export function Hero() {
   return (
@@ -36,33 +35,36 @@ export function Hero() {
         aria-hidden="true"
       />
 
-      <div className="relative z-10 mx-auto flex w-full max-w-7xl items-center px-6 pb-28 pt-40 md:pb-36 md:pt-48">
-        <div className="max-w-3xl">
-          <p className="animate-reveal-up text-xs font-bold uppercase tracking-[0.28em] text-brand">
-            A dark fantasy action-adventure
-          </p>
-          <h1 className="animate-reveal-up animation-delay-100 mt-5 font-display text-[clamp(5.5rem,15vw,12rem)] font-extrabold uppercase leading-[0.72] tracking-[-0.035em]">
-            Hell
-            <span className="block text-brand">Bleeds</span>
-          </h1>
-          <p className="animate-reveal-up animation-delay-200 mt-8 max-w-xl text-sm leading-7 text-white/76 sm:text-base">
-            African folklore collides with cinematic action in a world where
-            old stories refuse to stay buried.
-          </p>
+      <div className="relative z-10 mx-auto flex w-full max-w-7xl items-center justify-center px-6 pb-28 pt-40 md:pb-36 md:pt-48">
+        <div className="flex min-w-0 w-full max-w-5xl flex-col items-center text-center">
+          <div
+            className="animate-reveal-up relative aspect-[3.3/1] w-full"
+            role="img"
+            aria-label="Hell Bleeds"
+          >
+            <Image
+              src="/Name logo.png"
+              alt=""
+              fill
+              priority
+              sizes="(min-width: 1280px) 1024px, calc(100vw - 3rem)"
+              className="object-cover object-center"
+            />
+          </div>
 
-          <div className="animate-reveal-up animation-delay-300 mt-9 flex flex-wrap gap-3">
+          <div className="animate-reveal-up animation-delay-100 mt-6 flex w-full max-w-xs flex-col justify-center gap-3 sm:mt-8 sm:w-auto sm:max-w-none sm:flex-row">
             <a
               href={trailerUrl}
               target="_blank"
               rel="noreferrer"
-              className="group inline-flex h-12 items-center justify-center gap-3 bg-brand px-6 text-xs font-bold uppercase tracking-[0.14em] text-brand-foreground transition-colors hover:bg-white"
+              className="group inline-flex h-12 w-full items-center justify-center gap-3 bg-brand px-6 text-xs font-bold uppercase tracking-[0.14em] text-brand-foreground transition-colors hover:bg-white sm:w-auto"
             >
               <Play className="size-3.5 fill-current" />
               Watch trailer
             </a>
             <Link
               href="/games"
-              className="inline-flex h-12 items-center justify-center border border-white/45 px-6 text-xs font-bold uppercase tracking-[0.14em] text-white transition-colors hover:border-white hover:bg-white hover:text-black"
+              className="inline-flex h-12 w-full items-center justify-center border border-white/45 px-6 text-xs font-bold uppercase tracking-[0.14em] text-white transition-colors hover:border-white hover:bg-white hover:text-black sm:w-auto"
             >
               Explore the game
               <ArrowRight className="ml-3 size-4" />

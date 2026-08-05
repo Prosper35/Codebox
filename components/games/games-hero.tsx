@@ -1,8 +1,7 @@
 import Image from 'next/image'
 import { Play } from 'lucide-react'
 
-const trailerUrl =
-  'https://drive.google.com/file/d/11s7_reU1tg6AOGrYAYZKTb-Uozwj06HA/view?usp=sharing'
+const trailerUrl = 'https://youtu.be/2q_qoHTgPGY'
 
 export function GamesHero() {
   return (
